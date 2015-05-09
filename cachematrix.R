@@ -11,7 +11,7 @@
 ## the special "matrix" created with the first function.
 
 ## Example matrix:
-## Mat<-matrix(c(3,1,6,9,4,2,6,8,9),nrow=3,ncol=3)
+Mat<-matrix(c(3,1,6,9,4,2,6,8,9),nrow=3,ncol=3)         # the original matrix (example)
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -41,4 +41,5 @@ cacheSolve <- function(x, ...) {
         m
 }
 
-cacheSolve(M)
+InvMat<-cacheSolve(M)
+InvMat          # the inverted matrix
